@@ -10,8 +10,8 @@ from pypinyin import lazy_pinyin, TONE2
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="按汉语拼音和声调排序汉字",
-                                     epilog="https://github.com/shenwei356")
+    parser = argparse.ArgumentParser(description="提取文本中的汉字，按拼音和声调排序",
+                                     epilog="https://github.com/shenwei356/pinyin")
 
     parser.add_argument('files', nargs='*', type=argparse.FileType('r'),
                         default=sys.stdin, help='输入文件需utf8编码，若未指定文件则为stdin')
